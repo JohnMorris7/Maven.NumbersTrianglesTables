@@ -11,7 +11,7 @@ public class NumberUtilitiesTest {
         int stop = 10;
 
         // : When
-        String actual = NumberUtilities.getRange(stop);
+        String actual = String.valueOf(NumberUtilities.getRange(stop));
 
         // : Then
         Assert.assertEquals(expected, actual);
@@ -173,12 +173,12 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetEvenNumbers() {
         // : Given
-        String expected = "5791113151719";
+        String expected = "681012141618";
         int start = 5;
         int stop = 20;
 
         // : When
-        String actual = NumberUtilities.getEvenNumbers(start, stop);
+        String actual = String.valueOf(NumberUtilities.getEvenNumbers(start, stop));
 
         // : Then
         Assert.assertEquals(expected, actual);
@@ -187,7 +187,7 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetOddNumbers() {
         // : Given
-        String expected = "681012141618";
+        String expected = "5791113151719";
         int start = 5;
         int stop = 20;
         int step = 5;

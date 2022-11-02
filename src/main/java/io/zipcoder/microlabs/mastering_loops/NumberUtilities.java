@@ -1,18 +1,25 @@
 package io.zipcoder.microlabs.mastering_loops;
 
 
+import java.util.Scanner;
+
 public class NumberUtilities {
     public static String getEvenNumbers(int start, int stop) {
+        StringBuilder even = new StringBuilder();
+
+        for (int i = start; i < stop; i++) {if(i % 2==0) even = even.append(i);}
+        return even.toString();
+        }
 
 
-        return ;
-    }
+
 
 
     public static String getOddNumbers(int start, int stop) {
+        StringBuilder odd = new StringBuilder();
 
-
-        return null;
+        for (int i = start; i < stop; i++) {if(i % 2==1) odd = odd.append(i);}
+        return odd.toString();
     }
 
 
@@ -48,6 +55,12 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        String answer = "";
+        for (int i = start; i < stop; i += step) {
+            int number = (int) Math.pow(i, exponent);
+            answer += number;
+
+        }
+        return answer;
     }
 }

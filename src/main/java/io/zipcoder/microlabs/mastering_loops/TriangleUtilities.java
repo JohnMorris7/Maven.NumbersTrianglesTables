@@ -7,8 +7,8 @@ public class TriangleUtilities {
 
         int idx = 1;
         while (idx < numberOfRows){
-            String thisrow = getRow(idx);
-            sb.append(thisrow).append("\n");
+            String thisRow = getRow(idx);
+            sb.append(thisRow).append("\n");
             idx++;
         }
         return sb.toString();
@@ -24,11 +24,11 @@ public class TriangleUtilities {
 
     public static String getSmallTriangle() {
 
-
-        return null;
+        return getTriangle(5);
     }
 
     public static String getLargeTriangle() {
-        return null;
+
+        return getTriangle(10);
     }
 }
